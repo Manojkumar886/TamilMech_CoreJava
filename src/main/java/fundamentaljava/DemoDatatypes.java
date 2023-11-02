@@ -4,6 +4,7 @@ public class DemoDatatypes //class
 {
     public static void main(String[] args) //main method
     {
+        DemoDatatypes data=new DemoDatatypes();
         // variable-stored the data
         // datatype variablename=data;
 
