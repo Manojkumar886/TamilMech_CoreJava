@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class DemoVariables
 {
 
-    public void Local()
+    public void Local()//user defined method
     {
         Scanner scan=new Scanner(System.in);
         System.out.println("MY College Percentage ");
@@ -14,7 +14,7 @@ public class DemoVariables
         System.out.println("my percentage :"+Percentage);
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args) //main method
     {
         Scanner scan=new Scanner(System.in);//object
 
