@@ -3,6 +3,7 @@ package fundamentaljava;
 
 public class DemoMethodsUsage 
 {
+    int serialno=4;//global variable
     // w/o returntype w/o arguments
 
     public void Student1()
@@ -18,6 +19,9 @@ public class DemoMethodsUsage
     {
         System.out.println(" My Name is : "+stud_name);
         System.out.println(" my age is : "+stud_age );
+        
+        System.out.println(" my serial no "+serialno);//accessed in global variable
+    
     }
 
 
@@ -39,6 +43,7 @@ public class DemoMethodsUsage
     public static void main(String[] args) 
     {
         DemoMethodsUsage usage=new DemoMethodsUsage();
+        
         usage.Student1();
 
         int age=22;
@@ -49,7 +54,8 @@ public class DemoMethodsUsage
         
         String heroname=usage.ActorDetails("VIJAY", 'B');
         System.out.println(" my hero name is :"+heroname);
-   
+        
+        System.out.println(" my global in main :"+usage.serialno);//accessed global with using object
     }
     
 }
