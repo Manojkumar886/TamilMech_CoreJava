@@ -1,10 +1,24 @@
 package fundamentaljava.Arrays;
 
-public class CreatingAnArray 
+import fundamentaljava.Modifiers.access;
+
+public class CreatingAnArray extends access
 {
+    public void accessprotect()
+    {
+        protectedModifier();
+        // DefaultModfier();
+    }
+
 
     public static void main(String[] args) 
     {
+
+        access a=new access();// other package class .class is public
+        a.publicmodifier();
+        // a.DefaultModfier();//
+        // a.protectedModifier();//protected modifier cannot access other package
+        // a.privateModifier();// private modifier cannot access other class and packages
         String MobileBrands []={"One plus","Oppo","Vivo","Realme","Redmi","Samsung","Iq","Nokia"};
         
         // System.out.println(MobileBrands.length);
